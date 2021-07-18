@@ -1,0 +1,146 @@
+<html><head></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">Started by user admin
+Running as SYSTEM
+Building in workspace C:\Users\sauvi\.jenkins\workspace\hackathonProject
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+using credential e13aa9b7-b80a-4dab-961a-293199671e49
+Cloning the remote Git repository
+Cloning repository https://github.com/Sauvik27/hackathonProject.git
+ &gt; git.exe init C:\Users\sauvi\.jenkins\workspace\hackathonProject # timeout=10
+Fetching upstream changes from https://github.com/Sauvik27/hackathonProject.git
+ &gt; git.exe --version # timeout=10
+ &gt; git --version # 'git version 2.30.2.windows.1'
+using GIT_ASKPASS to set credentials 
+ &gt; git.exe fetch --tags --force --progress -- https://github.com/Sauvik27/hackathonProject.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ &gt; git.exe config remote.origin.url https://github.com/Sauvik27/hackathonProject.git # timeout=10
+ &gt; git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ &gt; git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision f78b38e2aa575a73d00e26ff37187ee6ef8d99b1 (refs/remotes/origin/master)
+ &gt; git.exe config core.sparsecheckout # timeout=10
+ &gt; git.exe checkout -f f78b38e2aa575a73d00e26ff37187ee6ef8d99b1 # timeout=10
+Commit message: "commit"
+ &gt; git.exe rev-list --no-walk f78b38e2aa575a73d00e26ff37187ee6ef8d99b1 # timeout=10
+Parsing POMs
+Established TCP socket on 9515
+[FindingHospital] $ "C:\Program Files\Java\jdk-11.0.11/bin/java" -cp C:\Users\sauvi\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;D:\Selenium\Maven\apache-maven-3.8.1\boot\plexus-classworlds-2.6.0.jar;D:\Selenium\Maven\apache-maven-3.8.1/conf/logging jenkins.maven3.agent.Maven35Main D:\Selenium\Maven\apache-maven-3.8.1 C:\Users\sauvi\.jenkins\war\WEB-INF\lib\remoting-4.7.jar C:\Users\sauvi\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Users\sauvi\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 9515
+&lt;===[JENKINS REMOTING CAPACITY]===&gt;���channel started
+Executing Maven:  -B -f C:\Users\sauvi\.jenkins\workspace\hackathonProject\FindingHospital\pom.xml clean test
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------&lt; HospitalFindings:FindingHospital &gt;------------------
+[INFO] Building FindingHospital 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ FindingHospital ---
+[INFO] Deleting C:\Users\sauvi\.jenkins\workspace\hackathonProject\FindingHospital\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ FindingHospital ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\sauvi\.jenkins\workspace\hackathonProject\FindingHospital\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ FindingHospital ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to C:\Users\sauvi\.jenkins\workspace\hackathonProject\FindingHospital\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ FindingHospital ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\sauvi\.jenkins\workspace\hackathonProject\FindingHospital\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ FindingHospital ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to C:\Users\sauvi\.jenkins\workspace\hackathonProject\FindingHospital\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ FindingHospital ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 39541
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 02, 2021 12:45:44 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+****************Hospitals having rating greater than 3.5*********************
+Motherhood Hospital
+Koshys Hospital
+Sakra World Hospital
+Sagar Hospitals
+Springleaf Healthcare
+Mallige Medical Centre
+Nethradhama Super Speciality Eye Hospital
+**********************major cities List***************************
+Bangalore
+Delhi
+Mumbai
+Hyderabad
+Pune
+Test Case Passed
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 22219
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 02, 2021 12:47:14 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+****************Hospitals having rating greater than 3.5*********************
+Motherhood Hospital
+Koshys Hospital
+Sakra World Hospital
+Sagar Hospitals
+Springleaf Healthcare
+Mallige Medical Centre
+Nethradhama Super Speciality Eye Hospital
+**********************major cities List***************************
+Bangalore
+Delhi
+Mumbai
+Hyderabad
+Pune
+****************************Alert********************************
+Please enter valid email address
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 10260
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 02, 2021 12:48:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+****************Hospitals having rating greater than 3.5*********************
+Motherhood Hospital
+Koshys Hospital
+Sakra World Hospital
+Sagar Hospitals
+Springleaf Healthcare
+Mallige Medical Centre
+Nethradhama Super Speciality Eye Hospital
+**********************major cities List***************************
+Bangalore
+Delhi
+Mumbai
+Hyderabad
+Pune
+****************************Alert********************************
+Please enter valid phone no
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 266.81 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[JENKINS] Recording test results
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:45 min
+[INFO] Finished at: 2021-07-02T00:50:09+05:30
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[JENKINS] Archiving C:\Users\sauvi\.jenkins\workspace\hackathonProject\FindingHospital\pom.xml to HospitalFindings/FindingHospital/0.0.1-SNAPSHOT/FindingHospital-0.0.1-SNAPSHOT.pom
+channel stopped
+[htmlpublisher] Archiving HTML reports...
+[htmlpublisher] Archiving at PROJECT level C:\Users\sauvi\.jenkins\workspace\hackathonProject\FindingHospital to C:\Users\sauvi\.jenkins\jobs\hackathonProject\htmlreports\HTML_20Report
+Finished: SUCCESS
+</pre></body></html>

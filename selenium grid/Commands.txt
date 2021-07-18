@@ -1,0 +1,4 @@
+To create hub--->    java -jar selenium-server-standalone-3.141.59.jar -role hub
+
+To create nodes and integrate with drivers--->    java -Dwebdriver.chrome.driver=C:\Selenium\Drivers\chromedriver.exe -Dwebdriver.firefox.driver=C:\Selenium\Drivers\geckodriver.exe -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://192.168.1.6:4444/wd/hub -port 5556 -browser browserName=chrome,maxInstances=3 -browser browserName=firefox,maxInstances=3
+

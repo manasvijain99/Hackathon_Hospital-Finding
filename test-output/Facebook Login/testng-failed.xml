@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Facebook Login]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Facebook Login Positive Case(failed)">
+    <classes>
+      <class name="testCases.correctTestCase">
+        <methods>
+          <include name="submitForm"/>
+          <include name="flushReport"/>
+        </methods>
+      </class> <!-- testCases.correctTestCase -->
+      <class name="testCases.phoneWrongTestCase">
+        <methods>
+          <include name="submitForm"/>
+          <include name="flushReport"/>
+        </methods>
+      </class> <!-- testCases.phoneWrongTestCase -->
+      <class name="testCases.emailWrongTestCase">
+        <methods>
+          <include name="flushReport"/>
+          <include name="submitForm" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.emailWrongTestCase -->
+    </classes>
+  </test> <!-- Facebook Login Positive Case(failed) -->
+</suite> <!-- Failed suite [Facebook Login] -->

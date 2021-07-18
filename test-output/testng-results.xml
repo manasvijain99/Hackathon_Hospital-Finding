@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-02T20:28:20 IST" name="Finding Hospital" finished-at="2021-07-02T20:32:22 IST" duration-ms="241997">
+    <groups>
+      <group name="testOne">
+        <method signature="correctTestCase.submitForm(java.lang.String)[pri:0, instance:testCases.correctTestCase@6a4f1a55]" name="submitForm" class="testCases.correctTestCase"/>
+      </group> <!-- testOne -->
+      <group name="testEmail">
+        <method signature="emailWrongTestCase.submitForm(java.lang.String)[pri:0, instance:testCases.emailWrongTestCase@13526e59]" name="submitForm" class="testCases.emailWrongTestCase"/>
+      </group> <!-- testEmail -->
+    </groups>
+    <test started-at="2021-07-02T20:28:20 IST" name="Finding Hospitals in PRACTO" finished-at="2021-07-02T20:32:22 IST" duration-ms="241997">
+      <class name="testCases.phoneWrongTestCase">
+        <test-method signature="submitForm(java.lang.String)[pri:0, instance:testCases.phoneWrongTestCase@2235eaab]" started-at="2021-07-02T20:31:01 IST" name="submitForm" depends-on-groups="testEmail" finished-at="2021-07-02T20:32:21 IST" duration-ms="80346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitForm -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:testCases.phoneWrongTestCase@2235eaab]" started-at="2021-07-02T20:32:21 IST" name="flushReport" finished-at="2021-07-02T20:32:22 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- testCases.phoneWrongTestCase -->
+      <class name="testCases.correctTestCase">
+        <test-method signature="submitForm(java.lang.String)[pri:0, instance:testCases.correctTestCase@6a4f1a55]" started-at="2021-07-02T20:28:20 IST" name="submitForm" finished-at="2021-07-02T20:30:00 IST" duration-ms="100141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitForm -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:testCases.correctTestCase@6a4f1a55]" started-at="2021-07-02T20:30:00 IST" name="flushReport" finished-at="2021-07-02T20:30:01 IST" duration-ms="792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- testCases.correctTestCase -->
+      <class name="testCases.emailWrongTestCase">
+        <test-method signature="submitForm(java.lang.String)[pri:0, instance:testCases.emailWrongTestCase@13526e59]" started-at="2021-07-02T20:30:01 IST" name="submitForm" depends-on-groups="testOne" finished-at="2021-07-02T20:31:01 IST" duration-ms="60288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitForm -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:testCases.emailWrongTestCase@13526e59]" started-at="2021-07-02T20:31:01 IST" name="flushReport" finished-at="2021-07-02T20:31:01 IST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- testCases.emailWrongTestCase -->
+    </test> <!-- Finding Hospitals in PRACTO -->
+  </suite> <!-- Finding Hospital -->
+</testng-results>

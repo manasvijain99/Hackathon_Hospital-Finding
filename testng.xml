@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Finding Hospital">
+	<parameter name="browser" value="chrome"></parameter>
+	<test thread-count="1" name="Finding Hospitals in PRACTO">
+		<classes>
+			<class name="testCases.correctTestCase" />
+			<class name="testCases.emailWrongTestCase"></class>
+			<class name="testCases.phoneWrongTestCase"></class>
+		</classes>
+
+	</test>
+</suite>
